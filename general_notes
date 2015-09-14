@@ -1,0 +1,14 @@
+# the basic structure of HTML website:
+<!DOCTYPE html> # this tag is single and therefore doesn't need to be closed by another tag
+  <hmtl>
+    <head>
+      <title>something_written_here</title>
+    </head>
+    <body>
+      <p>some_text_in_paragraphs_here</p>
+      <p>some_text_in_paragraphs_here</p>
+      <p>some_text_in_paragraphs_here</p>
+      <img src = "link.jpg">
+      <a href = "www.some-link.com">Click here!</a>
+    </body>
+  </html>
