@@ -12,3 +12,44 @@
       <a href = "www.some-link.com">Click here!</a>
     </body>
   </html>
+
+# CSS
+# there are two ways of working with CSS. one way is to add CSS code between <style></style> tags, inside <head></head> section.
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			p {
+				color: purple;
+			}
+		</style>
+		<title>Result</title>
+	</head>
+	<body>
+		<p>Check it out! I'm purple!</p>
+	</body>
+</html>
+
+# second way is to write css in a separate file and link it to html document, using <link> tag (no need to close this one).
+# <link> needs three attributes: type equal to "text/css", rel equal to "stylesheet" and href equal to the address of css.
+<!DOCTYPE html>
+<html>
+	<head>
+	    <link type = "text/css" rel = "stylesheet" href = "stylesheet.css"/>
+	    # since nothing is going between <link> and </link>, i open and close the tag within one pair of brackets
+	    # the same goes on for <img> - <img src = "www.w.com"/>
+		<title>Result</title>
+	</head>
+	<body>
+		<p>I want to be SIZE 44 font!</p>
+	</body>
+</html>
+
+# CSS syntax:
+selector { # this is any html element, such as <p>, <img>, <span>, just without <>
+  property: value; # e.g. color: violet; font-size: 69, font-family: cursive;
+}
+
+# "hex color palette" or "hex color picker" - google it to find color shades in hexadecimal values
+
+# 
