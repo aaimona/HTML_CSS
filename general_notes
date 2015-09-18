@@ -52,4 +52,95 @@ selector { # this is any html element, such as <p>, <img>, <span>, just without 
 
 # "hex color palette" or "hex color picker" - google it to find color shades in hexadecimal values
 
-# 
+# one way to apply css rule to a particular element, e.g. paragraph, one instance of header1 etc. is to enclose it in
+# <div></div> tags. then, in the css file i need to write div p {my_look_here}. 
+# html file
+<body>
+		<h1>Big Header</h1>
+		<p>That is a paragraph.</p>
+		<h2>A bit smaller header</h2>
+		<div><p>I don't know what to write.</p></div>
+	</body>
+# css file
+h1 {
+    font-family: cursive; font-size: 40px; 
+    }
+p {
+    color: red;
+    }
+h2 {
+    font-size: 20px;
+    }
+div p {
+    color: purple; 
+    }
+
+# there is a special selector that allows me to apply styling to all elements of given characteristics - * selector
+* {
+    border: 1px dashed #3A5FCD
+    }
+# it will apply a specified border to all elements of my html webpage.
+
+# certain selectors will "override" others if they have a greater specificity value. ul li p { is more specific CSS 
+# than just p {, so when CSS sees tags that are both <p> tags and happen to be inside unordered lists, it will apply the more
+# specific styling (ul li p {) to the text inside the lists.
+
+# CLASSES and IDs
+# There are two selectors that are even more specific than nested selectors like the ones above: classes and IDs. 
+# Classes are assigned to HTML elements with the word class and an equals sign, like so:
+<div class="square"></div>
+<img class="square"/>
+<td class="square"></td>
+Classes are identified in CSS with a dot (.), like so:
+.square {
+    height: 100px;
+    width: 100px;
+}
+# This allows you to take random elements of different types and give them the same styling.
+
+# IDs, on the other hand, are great for when you have exactly one element that should receive a certain kind of styling.
+# IDs are assigned to HTML elements with the word id and an equals sign:
+<div id="first"></div>
+<div id="second"></div>
+<p id="intro"></p>
+# IDs are identified in CSS with a pound sign (#):
+#first {
+    height: 50px;
+}
+
+#second {
+    height: 100px;
+}
+
+#intro {
+    color: #FF0000;
+}
+# This allows you to apply style to a single instance of a selector, rather than all instances.
+
+# PSEUDO-SELECTORS
+# A pseudo-class selector is a way of accessing HTML items that aren't part of the document tree (e.g. info whether the
+# link was visited or not, or even if a reader is hovering over it but hasn't clicked it yet). In case of links enclosed in
+# <a></a> tags there are 3 useful pseudo selectors: a:link, a:visited and a:hover:
+a:link {
+    text-decoration: none;
+    color: #008B45;
+    }
+    
+a:hover {
+    color: #00FF00;
+    }
+    
+a:visited {
+    color: #EE9A00;
+    }
+    
+# another handy selector is first-child. the syntax is as follows:
+p:first-child {
+    color: red;
+} # it means that changes will be made only to first children of all paragraphs
+
+# i can select the nth child:
+p:nth-child(2) { # i'm talking about an element that is p (paragraph) AND is nth child of its parent element
+    color: red;
+}
+
