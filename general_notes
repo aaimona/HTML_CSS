@@ -144,3 +144,34 @@ p:nth-child(2) { # i'm talking about an element that is p (paragraph) AND is nth
     color: red;
 }
 
+# POSITIONING THE CSS
+# learning how to position html elements gives me a very fine control of what the webpage looks like.
+# up to now, the html elements have been sitting on top of one another: by default, they take up the full width of the page.
+# i can change all this with the first positioning property: the display property. it has four aspects:
+# block: This makes the element a block box. It won't let anything sit next to it on the page! It takes up the full width,
+# inline-block: This makes the element a block box, but will allow other elements to sit next to it on the same line,
+# inline: This makes the element sit on the same line as another element, but without formatting it like a block. 
+# tt only takes up as much width as it needs (not the whole line),
+# none: this makes the element and its content disappear from the page entirely.
+div {
+	display: block; # or any other value mentioned above
+}
+
+# margin - how far the element is from the page border
+# border - the visible line separating elements from their environment
+# padding - how much space there is between the content of the element (e.g. text or image) and the border
+# i can use negative values while setting those. since when i say i want left margin of 40px, i actually move the element
+# to the right, negative values could be used to move the element to the left:
+div {
+	margin-left: -20px;
+}
+
+# absolute positioning - when an element is set to position: absolute, it's then positioned in relation to the first
+# parent element it has that doesn't have position: static. if there's no such element, the element with position: absolute
+# gets positioned relative to <html>.
+# relative positioning tells the element to move relative to where it would have landedif it just had the default
+# static positioning. if i give an element relative positioning and tell it to have a margin-top of 10px, 
+# it doesn't move down ten pixels from any particular thing—it moves down ten pixels from where it otherwise would have been.
+# fixed positioning anchors an element to the browser window - it's like gluing the element to the screen. 
+# if i scroll up and down, the fixed element stays put even as other elements scroll past.
+
