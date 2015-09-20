@@ -1,0 +1,102 @@
+# INDEX.HTML
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title></title>
+	</head>
+	<body>
+	    <div id = "header">
+	        <h3>
+	            <div class = "what">Genowefa Pigwa</div>
+	            <div class = "what">Curriculum Vitae</div>
+	        </h3>
+	    </div>
+	    <div class = "left">
+	       <p class = "pg">Address</p>
+	       <p class = "pg">Phone number</p>
+	       <p class = "pg">Email</p>
+	       <p class = "pg">Github</p>
+	    </div>
+	    <div class = "right">
+	        <ul>
+	            <li class = "list">School no 1</li>
+	            <li class = "list">School no 2</li>
+	            <li class = "list">School no 3</li>
+	        </ul>
+	    </div>
+	    <div id = "footer"></div>
+	</body>
+</html>
+
+# STYLESHEET.CSS
+div {
+    border-radius: 6px;
+    }
+    
+#header {
+    display: block;
+    background-color: #001f3f;
+    height: 70px;
+    width: 385px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    z-index: 1;
+    position: fixed;
+    padding-top: 10px;
+    }
+
+.left {
+    display: inline-block;
+    background-color: #9df2da;
+    height: 300px;
+    width: 120px;
+    float: left;
+    padding: 10px;
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    }
+    
+.right {
+    display: inline-block;
+    background-color: #e3e3e3;
+    height: 300px;
+    width: 200px;
+    float: right;
+    padding: 10px;
+    margin-top: 100px;
+    text-align: left;
+    }
+    
+#footer {
+    background-color: #001f3f;
+    height: 80px;
+    width: 385px;
+    clear: both;
+    margin-top: 10px;
+    margin-left: 10px;
+    }
+    
+h3 {
+    color: white;
+    font-family: Courier;
+    text-align: center;
+    font-size: 15px;
+    }
+    
+.what {
+    display: inline-block;
+    margin: 20px;
+    }
+    
+.pg {
+    font-family: Courier;
+    color: #001f3f;
+    text-align: right;
+    }
+    
+.list {
+    font-family: Courier;
+    color: #001f3f;
+    }
